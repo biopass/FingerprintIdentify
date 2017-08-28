@@ -8,41 +8,68 @@
               android:paddingRight="14dp"
               android:paddingTop="6dp">
 
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="start"-->
+            <!--android:text="@string/btn_start"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:onClick="copy"-->
+            <!--android:text="@string/btn_copy"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="clean"-->
+            <!--android:text="@string/clear"/>-->
+
+    <!--</LinearLayout>-->
+
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="start"
-            android:text="@string/btn_start"/>
+    <ImageButton
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_weight="0.5"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/btnmain"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/logon"
+        android:background="@null"
+        android:contentDescription="hi"
+        android:onClick="start"
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
-            android:onClick="copy"
-            android:text="@string/btn_copy"/>
-
+        />
     </LinearLayout>
+    <!--<ScrollView-->
+        <!--android:id="@+id/mScrollView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:scrollbars="none">-->
+   <!---->
+        <!--<TextView-->
+            <!--android:id="@+id/mTvTips"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="12dp"-->
+            <!--android:textSize="14sp"-->
+            <!--tools:text=""/>-->
 
-    <ScrollView
-        android:id="@+id/mScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="8dp"
-        android:scrollbars="none">
-
-        <TextView
-            android:id="@+id/mTvTips"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="12dp"
-            android:textSize="14sp"
-            tools:text="德玛西亚"/>
-
-    </ScrollView>
+    <!--</ScrollView>-->
 
 </LinearLayout>
